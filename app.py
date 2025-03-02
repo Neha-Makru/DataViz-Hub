@@ -46,7 +46,7 @@ df_selection=df.query(
 
 st.dataframe(df_selection)
 
-#mainpage 
+
 
 st.title(':bar_chart: Sales Dashboard')
 st.markdown('##')
@@ -72,7 +72,7 @@ with right_column:
 st.markdown("---")
 
 
-#sales by productt line 
+#sales by prodcutt line 
 
 sales_by_product_line=(
     df_selection.groupby(by=['Product line']).sum()[['Total']].sort_values(by='Total')
